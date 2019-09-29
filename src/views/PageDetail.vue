@@ -173,7 +173,7 @@ export default {
 </script>
 <style scoped>
 .detailPage {
-  background: #f4f5f6;
+  /* background: #f4f5f6; */
 }
 .bar {
   width: 100%;
@@ -199,15 +199,17 @@ export default {
   /* position: absolute; */
   width: 90%;
   margin-left: 15px;
-
-  border: 1px solid #595959;
+  margin-top: 30px;
+  /* border: 1px solid #595959; */
 }
-
+/* 新闻 */
 .detailPage {
   width: 100%;
 }
+/* 新闻内容 */
 .detail_content {
-  width: 100%;
+  width: 90%;
+  margin-top: 15px;
 }
 .userControl {
   height: 30px;

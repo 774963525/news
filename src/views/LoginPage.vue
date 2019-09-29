@@ -51,15 +51,12 @@ export default {
       this.axios
         .post("http://115.29.42.191:8001/wp-json/jwt-auth/v1/token", obj)
         .then(res => {
-          if ((res.status = true)) {
-            alert("登陆成功");
-
-            localStorage.setItem("token", res.token);
-
-            this.$router.push("/");
-          } else {
-            alert("登录失败,请检查您的用户密码是否正确");
-          }
+          alert("登陆成功");
+          localStorage.setItem("token", res.token);
+          this.$router.push("/");
+        })
+        .catch(err => {
+          alert("登录失败");
         });
     }
   }
